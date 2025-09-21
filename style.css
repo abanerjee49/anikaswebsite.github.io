@@ -1,0 +1,391 @@
+body {
+  font-family: "Spectral", sans-serif;
+  background-color: #f7d6d5;
+}
+
+#cart td, #cart th{
+  margin-left: 60px;
+  
+}
+
+#cart tr:hover {background-color: #e6e6fa;}
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 1px;
+  margin-top: 50px;
+  font-weight: 350;
+  letter-spacing: 5px;
+}
+.product {
+  position: relative;
+  color: black;
+  text-decoration: none;
+  font-weight: 100 !important;
+  width: 200px;
+  height: 200px;
+}
+
+/* this is for transition */
+.product after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+/* this is for transition */
+
+.product:hover after {
+  display: block;
+  background: rgba(0, 0, 0, 0.6);
+}
+/*.product h3 {
+  padding: 0;
+  margin: 0;
+}*/
+
+.product h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+p {
+  text-align: center;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*.image-grid img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  padding-right: 50px;
+}
+ /* Object-Fit Ensures the image covers the area without distortion */
+
+.rye-regular {
+  font-family: "Rye", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.spectral-extralight {
+  font-family: "Spectral", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.spectral-light {
+  font-family: "Spectral", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.spectral-regular {
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.spectral-medium {
+  font-family: "Spectral", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.spectral-semibold {
+  font-family: "Spectral", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.spectral-bold {
+  font-family: "Spectral", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.spectral-extrabold {
+  font-family: "Spectral", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.spectral-extralight-italic {
+  font-family: "Spectral", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.spectral-light-italic {
+  font-family: "Spectral", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.spectral-regular-italic {
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.spectral-medium-italic {
+  font-family: "Spectral", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.spectral-semibold-italic {
+  font-family: "Spectral", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.spectral-bold-italic {
+  font-family: "Spectral", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.spectral-extrabold-italic {
+  font-family: "Spectral", serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.braceletInfo {
+  /* border:2px solid green;*/
+  width: 300px;
+  float: right;
+  margin: 10px 0 10px 5px;
+  height: 350px;
+  padding-right: 75px;
+}
+
+.braceletInfo h2 {
+  font-size: 30;
+}
+
+.braceletPic {
+  /*border:2px solid blue;*/
+  width: 500px;
+  /*  margin:50px 0px 0px 180px;
+  min-height:500px;*/
+  height: 500px;
+  /*padding-top: 50px;  /*this moves the image down :)*/
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 130px;
+}
+
+.braceletPic img {
+  height: 30rem;
+  width: 30rem;
+}
+
+.braceletPic:hover img {
+  transform: scale(1.5);
+  cursor: zoom-in;
+}
+
+ul {
+  position: fixed;
+  top: 0%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: Black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px; /* Change the font size */
+  height: 40px;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #000000; /*this is the nav bar section color when you hover over it */
+  color: White;
+}
+
+.active {
+  background-color: #daa520; /*this is the color it highlights when you're on that page*/
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap; /*Allows wrapping to next row*/
+  gap: 20px; /*space between products*/
+  flex-direction: row;
+  justify-content: start;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/*.bracelet:hover {max-width: 100px}*/
+
+.bracelet {
+  max-width: 500px;
+  border: 0px outset;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.bracelet div {
+  font-size: 1em;
+}
+
+.braceletImg {
+  width: 100px;
+  height: 235px;
+}
+
+img {
+  border-radius: 2rem;
+  transition: all 0.3s ease-in;
+}
+img:hover {
+  border-radius: 1rem;
+}
+
+.braceletSecondaryImg {
+  object-fit: cover;
+  z-index: 1;
+  opacity: 0;
+  width: 200px;
+  height: 200px;
+  transition: all 0.4s ease-in-out;
+}
+.braceletSecondaryImg:hover {
+  opacity: 1;
+}
+
+.small-container {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.row {
+  display: flex; /* Flexbox layout for rows */
+  justify-content: space-between; /* Space between columns */
+  flex-wrap: wrap; /* Wrap to the next line if necessary */
+}
+
+.col-4 {
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+}
+
+.col-4 img {
+  width: 100%;
+}
+#cartTable {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+}
+#cartTable thead {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+}
+#cartTable th, #cartTable td {
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+}
+#cartTable tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+ 
+#cartTable tbody tr:hover {
+  background-color: #f1f1f1;
+  transition: background-color 0.2s ease;
+}
+ 
+#cartTable .action-btn {
+  padding: 6px 12px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+ 
+#cartTable .action-btn:hover {
+  background-color: #c0392b;
+}
+
+.cart-table{
+  width:100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  background-color: white;
+  border-radius:10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  
+}
+.cart-table button {
+  padding: 0.4rem 0.8rem;
+  background-color: #FF5EAE;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+ 
+.cart-table button:hover {
+  background-color: #AA336A;
+}
+.cart-table th,
+.cart-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e0c97f;
+}
+ 
+.cart-table th {
+  background-color: #FFF6BA;
+  color: #3d2f00;
+  font-weight: bold;
+}
+ 
+.cart-table tr:last-child td {
+  border-bottom: none;
+}
+ 
+.cart-table input[type="number"] {
+  width: 60px;
+  padding: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

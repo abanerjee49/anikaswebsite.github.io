@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rye&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <ul>
+      <li><a href="index.html" class="active"> Home </a></li>
+      <li><a href="item1.html">Dangly Gold Bracelet </a></li>
+      <li><a href="item2.html"> Gold Heart Bracelet </a></li>
+      <li><a href="item33333.html"> Gold Cuff with Diamonds </a></li>
+      <li>
+        <a href="item444.html"> Gold Adjustable Bracelet with Emerald </a>
+      </li>
+      <li><a href="item55.html"> 24K Gold Bracelet with Many Hearts </a></li>
+      <li><a href="item6666.html"> Gold Heart Bracelet in Scarlet </a></li>
+
+      <button type="button" onclick="goToCart()">
+        Cart (<span id="cart-count">0</span>)
+      </button>
+    </ul>
+    <div class="shopping-cart">
+    <h2>Shopping Cart</h2>
+    <div id="cart">
+    <table id= "cartTable">
+    <thead>
+      <script>
+        updateCartCount();
+      </script>
+      <tr>
+        <th>Item</th>
+        <th>Color</th>
+        <th>Size</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    </table>
+    </div>
+    </div>
+    
+<!--    Instructor Code  -->
+<!--     
+    <div class="card">
+        <div class="card-contents">
+          <div class="card-row">
+              <p>Item Title</p>
+              <p>Price</p>
+          </div>
+          <div class="card-row">
+              <p>Color</p>
+              <p>Quantity</p>
+          </div>
+      </div>
+    </div> -->
+    <!--    Instructor Code End -->
+  </body>
+</html>
